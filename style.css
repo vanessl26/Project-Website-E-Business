@@ -9,12 +9,16 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(244, 244, 244);
 }
 
 .wrapper {
-    width: 1100px;
-    margin: auto;
-    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#home {
+    padding-top: 15vh;
 }
 
 #home img {
@@ -43,7 +47,7 @@ nav {
     position: -webkit-sticky;
     top: 0;
     background: #FFFFFF;
-    z-index: 1;
+    z-index: 10;
     border-bottom: 1px solid #364f6b;
 }
 
@@ -62,7 +66,7 @@ nav ul li a {
     color: black;
     font-weight: bold;
     text-align: center;
-    padding: 0px 16px 0px 16px;
+    padding: 0 2vw;
     text-decoration: none;
 }
 
@@ -70,6 +74,9 @@ nav ul li a:hover {
     text-decoration: underline;
     color: #fc5185;
     transition: 0.4s;
+    background-color: azure;
+    border-radius: 0.5rem;
+    padding: 1vh 2vw;
 }
 
 section {
@@ -103,9 +110,9 @@ h2 {
 
 a.tbl-biru {
     background: #3f72af;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 15px 20px 15px 20px;
+    border-radius: 0.5rem;
+    margin-left: 1vw;
+    padding: 1.5vh 1vw;
     color: #FFFFFF;
     cursor: pointer;
     font-weight: bold;
@@ -113,6 +120,7 @@ a.tbl-biru {
 
 a.tbl-biru:hover {
     background: #fc5185;
+    padding: 1.5vh 1vw;
     text-decoration: none;
     color: whitesmoke;
 }
@@ -136,6 +144,10 @@ a.tbl-pink:hover {
 p {
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
+}
+
+#services {
+    padding-top: 17.5vh;
 }
 
 .tengah {
@@ -168,6 +180,10 @@ p {
     background-color: #dedede;
     margin: 0 5%;
     border-radius: 1rem;
+}
+
+#payment {
+    padding-top: 15.5vh;
 }
 
 .payment-list {
