@@ -21,7 +21,7 @@
         }
 
         .wrapper {
-            width: 50%;
+            width: 30%;
             padding: 2rem 0 1rem 0;
             margin: 15vh auto;
             background: #fff;
@@ -58,7 +58,7 @@
         .recover {
             text-align: right;
             font-size: 0.8rem;
-            margin: 0.2rem 1.7rem 0 0;
+            margin: 0.7rem 8%;
         }
 
         .recover a {
@@ -70,22 +70,24 @@
         button {
             font-size: 1.1rem;
             margin-top: 1.5vh;
-            padding: 1.2vh 1vw;
+            padding: 0.8rem 2.5rem;
             border-radius: 0.5rem;
             outline: none;
             border: none;
-            width: 85%;
+            width: fit-content;
             background: #3f72af;
             color: #fff;
             cursor: pointer;
+            font-weight: bold;
         }
 
         button:hover {
             background: #fc5185;
-            padding: 1.2vh 1vw;
+            padding: 0.8rem 2.5rem;
             text-decoration: none;
             color: whitesmoke;
             transition: 0.5s;
+            font-weight: bold;
         }
 
         .or {
@@ -131,6 +133,12 @@
             text-decoration: underline;
             transition: 0.5s;
         }
+
+        @media screen and (max-width: 991.98px) {
+            .wrapper {
+                width: 50%;
+            }
+        }
     </style>
 </head>
 
@@ -145,7 +153,7 @@
                 <a href="#">Forgot Password</a>
             </p>
         </form>
-        <button>Sign in</button>
+        <a href="index.html"><button>Sign in</button></a>
         <p class="or">
             or continue with
         </p>
