@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form B&C Rent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: rgb(244, 244, 244);
+        }
+
+        .wrapper {
+            width: 50%;
+            padding: 2rem 0 1rem 0;
+            margin: 15vh auto;
+            background: #fff;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #07001f;
+        }
+
+        p {
+            margin: 2.5vh 0;
+        }
+
+        .logo,
+        .logo:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        form input {
+            width: 85%;
+            outline: none;
+            border: none;
+            background: #dfe9f5;
+            padding: 12px 14px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .recover {
+            text-align: right;
+            font-size: 0.8rem;
+            margin: 0.2rem 1.7rem 0 0;
+        }
+
+        .recover a {
+            text-decoration: none;
+            color: #07001f;
+            font-weight: bold;
+        }
+
+        button {
+            font-size: 1.1rem;
+            margin-top: 1.5vh;
+            padding: 1.2vh 1vw;
+            border-radius: 0.5rem;
+            outline: none;
+            border: none;
+            width: 85%;
+            background: #3f72af;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #fc5185;
+            padding: 1.2vh 1vw;
+            text-decoration: none;
+            color: whitesmoke;
+            transition: 0.5s;
+        }
+
+        .or {
+            font-size: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .icons i {
+            color: #07001f;
+            padding: 00.8rem 1.5rem;
+            border-radius: 10px;
+            margin-left: .9rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: 2px solid #dfe9f5;
+        }
+
+        .icons i:hover {
+            background: #07001f;
+            transition: 0.5s;
+        }
+
+        .icons i:first-child {
+            color: red;
+        }
+
+        .icons i:last-child {
+            color: blue;
+        }
+
+        .not-member {
+            font-size: 0.8rem;
+            margin-top: 1.4rem;
+        }
+
+        .not-member a {
+            color: #3f72af;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Welcome Back to <br> <a class="logo" href="index.html">B&C Rent!</a></h1>
+        <p>Sign in to your account</p>
+        <form>
+            <input type="text" placeholder="Username or Email">
+            <input type="password" placeholder="Password">
+            <p class="recover">
+                <a href="#">Forgot Password</a>
+            </p>
+        </form>
+        <button>Sign in</button>
+        <p class="or">
+            or continue with
+        </p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="not-member">
+            Don't have an account yet? <a href="register.html">Register here!</a>
+        </div>
+    </div>
+</body>
+
+</html>
