@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&C Rent Order Form</title>
+    <link rel="stylesheet" href="style_orderForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>B&C Rent Order Form</h2>
+        </div>
+        <div class="d-flex">
+            <form action="" method="">
+                <label>
+                    <span class="fname">Nama Depan<span class="required">*</span></span>
+                    <input type="text" name="fname">
+                </label>
+                <label>
+                    <span class="lname">Nama Belakang<span class="required">*</span></span>
+                    <input type="text" name="lname">
+                </label>
+                <label>
+                    <span>Company Name (Optional)</span>
+                    <input type="text" name="cn">
+                </label>
+                <label>
+                    <span>No. Telp <span class="required">*</span></span>
+                    <input type="tel" name="phone">
+                </label>
+                <label>
+                    <span>Kota <span class="required">*</span></span>
+                    <select name="selection">
+                        <option value="select">Pilih kota...</option>
+                        <option value="AFG">Pontianak</option>
+                        <option value="ALA">Palangkaraya</option>
+                        <option value="ALB">Banjarmasin</option>
+                        <option value="DZA">Samarinda</option>
+                        <option value="ASM">Tanjung Selor</option>
+                    </select>
+                </label>
+
+
+                <!-- <label>
+                    <span>Street Address <span class="required">*</span></span>
+                    <input type="text" name="houseadd" placeholder="House number and street name" required>
+                </label>
+                <label>
+                    <span>&nbsp;</span>
+                    <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+                </label>
+                <label>
+                    <span>Town / City <span class="required">*</span></span>
+                    <input type="text" name="city">
+                </label>
+                <label>
+                    <span>State / County <span class="required">*</span></span>
+                    <input type="text" name="city">
+                </label>
+                <label>
+                    <span>Postcode / ZIP <span class="required">*</span></span>
+                    <input type="text" name="city">
+                </label> -->
+
+                <!-- <label>
+                    <span>Email <span class="required">*</span></span>
+                    <input type="email" name="city">
+                </label> -->
+                <label>
+                    <span>Jenis <br> Kendaraan <span class="required">*</span></span>
+                    <select name="selection">
+                        <option value="select">Pilih Jenis Kendaraan...</option>
+                        <option value="AFG">Bus Besar</option>
+                        <option value="ALA">Bus Kecil</option>
+                        <option value="ALB">Mobil Besar</option>
+                        <option value="DZA">Mobil Kecil</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Lama Sewa <br> (per hari) <span class="required">*</span></span>
+                    <input type="number" name="day">
+                </label>
+            </form>
+            <div class="Yorder">
+                <table>
+                    <tr>
+                        <th colspan="2">Your order</th>
+                    </tr>
+                    <tr>
+                        <td>Bus Besar</td>
+                        <td>Rp 500.000/day</td>
+                    </tr>
+                    <tr>
+                        <td>Day</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>Rp 2.500.000</td>
+                    </tr>
+                </table><br>
+                <div>
+                    <input type="radio" name="dbt" value="dbt" checked> Bank Transfer
+                </div>
+                <div>
+                    <input type="radio" name="dbt" value="cd"> Virtual Account
+                </div>
+                <div>
+                    <input type="radio" name="dbt" value="cd"> E-Wallet
+                </div>
+                <button type="button">Order</button>
+            </div><!-- Yorder -->
+        </div>
+    </div>
+</body>
+
+</html>
