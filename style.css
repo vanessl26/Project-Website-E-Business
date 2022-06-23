@@ -1,3 +1,4 @@
+/* CSS for index.html */
 body {
     background-color: whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,7 +38,7 @@ body {
 }
 
 section {
-    margin-top: 12rem;
+    padding-top: 12rem;
 }
 
 #LandingPage img {
@@ -67,11 +68,31 @@ h5 {
 }
 
 #Contact {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     background-color: #dedede;
 }
 
 .fa {
     text-decoration: none;
     color: black;
+}
+
+/* CSS for more.html */
+#Benefits .img_benefits {
+    width: 100%;
+    background-color: #dedede;
+    border-radius: 50%;
+}
+
+#Team {
+    margin-bottom: 3rem;
+}
+
+#Team img {
+    border-radius: 50%;
+}
+
+#Team h5 {
+    background-color: white;
+    border: 0;
 }
