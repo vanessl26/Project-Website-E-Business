@@ -1,137 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form B&C Rent</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>B&C Rent Login</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'comic sans ms';
-        }
-
         body {
-            background-color: rgb(244, 244, 244);
+            background-color: whitesmoke;
         }
 
-        .wrapper {
-            width: 30%;
-            padding: 2rem 0 1rem 0;
-            margin: 15vh auto;
-            background: #fff;
-            border-radius: 0.5rem;
-            text-align: center;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        #inputForm {
+            background-color: #dfe9f5;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        h1 {
-            font-size: 1.8rem;
-            color: #07001f;
-        }
-
-        p {
-            margin: 2.5vh 0;
-        }
-
-        .logo,
-        .logo:hover {
-            color: black;
-            text-decoration: none;
-        }
-
-        form input {
-            width: 85%;
-            outline: none;
-            border: none;
-            background: #dfe9f5;
-            padding: 12px 14px;
-            margin-bottom: 10px;
-            border-radius: 0.5rem;
-        }
-
-        button {
-            font-size: 1.1rem;
-            margin-top: 1.5vh;
-            padding: 0.8rem 2.5rem;
-            border-radius: 0.5rem;
-            outline: none;
-            border: none;
-            width: fit-content;
-            background: #3f72af;
-            color: #fff;
-            cursor: pointer;
+        .btn {
+            font-size: 1.2rem;
             font-weight: bold;
+            margin: 0 1rem;
+            background-color: #3f72af;
         }
 
-        button:hover {
-            background: #fc5185;
-            padding: 0.8rem 2.5rem;
-            text-decoration: none;
-            color: whitesmoke;
-            transition: 0.5s;
+        .btn:hover {
+            background-color: #fc5185;
+            font-size: 1.2rem;
             font-weight: bold;
-        }
-
-        .or {
-            font-size: 0.8rem;
-            margin-top: 1.5rem;
+            margin: 0 1rem;
         }
 
         .icons i {
             color: #07001f;
-            padding: 00.8rem 1.5rem;
-            border-radius: 10px;
-            margin-left: .9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
             font-size: 1.5rem;
             cursor: pointer;
-            border: 2px solid #dfe9f5;
+            border: 2px solid #dedede;
         }
 
         .icons i:hover {
-            background: #07001f;
+            background: #eee;
             transition: 0.5s;
         }
 
         .icons i:first-child {
-            color: red;
+            color: #de5246;
         }
 
         .icons i:last-child {
-            color: blue;
-        }
-
-        @media screen and (max-width: 991.98px) {
-            .wrapper {
-                width: 50%;
-            }
+            color: #3b5998;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1>Welcome to <br> <a class="logo" href="index.html">B&C Rent!</a></h1>
-        <p>Create an Account</p>
-        <form>
-            <input type="text" placeholder="Username or Email">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
-        </form>
-        <a href="index.html"><button>Sign Up</button></a>
-        <p class="or">
-            or continue with
-        </p>
-        <div class="icons">
-            <i class="fab fa-google"></i>
-            <i class="fab fa-facebook"></i>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1>
+                    <h1>Welcome Back to <br> <a class="logo" href="index.html">B&C Rent!</a></h1>
+                    <p class="lead">Create an Account</p>
+                </h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="inputForm" aria-describedby="emailHelp"
+                            placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="inputForm" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="inputForm" placeholder="Confirm Password">
+                    </div>
+                    <div class="mb-3 text-center">
+                        <a href="index.html" class="btn btn-outline-light">Sign Up</a>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <p>Or continue with</p>
+                    </div>
+                    <div class="mb-3 icons text-center">
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
